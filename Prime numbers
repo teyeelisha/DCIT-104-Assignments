@@ -1,0 +1,16 @@
+# Teye Elisha ID: 10940920
+
+def is_prime(n):
+    for i in range(2, n // 2 + 1):
+        if (n % i == 0):
+            return (0)
+    return (1)
+
+print("For the sum of all prime numbers from one number to  another")
+x = int(input("Enter the first value:"))
+y = int(input("Enter the last value:"))
+result = []
+for i in range(x, y + 1):
+    if (is_prime(i)):
+        result.append(i)
+print("The sum of prime numbers is " + str(sum(result)))
